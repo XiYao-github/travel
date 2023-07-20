@@ -1,0 +1,126 @@
+{
+  "pages": [{
+    "path": "pages/home/home",
+    "style": {
+      "navigationBarTitleText": "首页",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/home/packages_info/packages_info",
+    "style": {
+      "navigationBarTitleText": "套餐信息",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/home/scenic_info/scenic_info",
+    "style": {
+      "navigationBarTitleText": "景点信息",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/home/scenic_list/scenic_list",
+    "style": {
+      "navigationBarTitleText": "景点列表",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/login/login",
+    "style": {
+      "navigationBarTitleText": "登录",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/notes/notes",
+    "style": {
+      "navigationBarTitleText": "旅游笔记",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/notes/notes_info/notes_info",
+    "style": {
+      "navigationBarTitleText": "笔记详情",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/order/order",
+    "style": {
+      "navigationBarTitleText": "购物车",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user",
+    "style": {
+      "navigationBarTitleText": "个人中心",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_info/user_info",
+    "style": {
+      "navigationBarTitleText": "个人信息",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_notes/user_notes",
+    "style": {
+      "navigationBarTitleText": "我的游记",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_notes/user_notes_add/user_notes_add",
+    "style": {
+      "navigationBarTitleText": "编写游记",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_notes/user_notes_info/user_notes_info",
+    "style": {
+      "navigationBarTitleText": "游记详情",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_order/user_order",
+    "style": {
+      "navigationBarTitleText": "我的订单",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/user_order/user_order_info/user_order_info",
+    "style": {
+      "navigationBarTitleText": "订单详情",
+      "enablePullDownRefresh": false
+    }
+  }],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "旅游",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "static/image/home.png",
+      "selectedIconPath": "static/image/home_activity.png"
+    }, {
+      "pagePath": "pages/notes/notes",
+      "text": "游记",
+      "iconPath": "static/image/notes.png",
+      "selectedIconPath": "static/image/notes_activity.png"
+    }, {
+      "pagePath": "pages/order/order",
+      "text": "购物车",
+      "iconPath": "static/image/shop.png",
+      "selectedIconPath": "static/image/shop_activity.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "static/image/user.png",
+      "selectedIconPath": "static/image/user_activity.png"
+    }]
+  }
+}
