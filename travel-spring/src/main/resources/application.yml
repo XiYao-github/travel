@@ -1,0 +1,63 @@
+server:
+  port: 8080
+  servlet:
+    #项目url路径
+    context-path: /travel
+    encoding:
+      charset: UTF-8
+
+spring:
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  banner:
+    charset: utf-8
+    location: classpath:banner.txt
+    #  main:
+    #关闭SpringBoot启动图标(banner)
+  #    banner-mode: off
+  application:
+    name: travel
+  mvc:
+    throw-exception-if-no-handler-found: true
+    dispatch-options-request: true
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/travel?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: root
+
+mybatis-plus:
+  #配置xml文件位置：classpath -> target/classes
+  mapper-locations: classpath:/mapper/**/*.xml
+  configuration:
+    #开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    #打印SQL日志到控制台
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    call-setters-on-nulls: true
+  global-config:
+    #关闭mybatis-plus启动图标(banner)
+    banner: false
+    db-config:
+      #主键策略，数据库 ID 自增
+      id-type: AUTO
+      #数据库表与模型类的映射关系，模型类名称添加travel__后再去和数据库表映射
+      table-prefix: travel_
+      #逻辑删除字段名
+      logic-delete-field: del_flag
+      #逻辑已删除值(默认为 1)
+      logic-delete-value: 1
+      #逻辑未删除值(默认为 0)
+      logic-not-delete-value: 0
+
+#打印SQL日志到控制台
+logging:
+  level:
+    travel.mapper: DEBUG
+#shiro:
+#  loginUrl: /travel/login
+image:
+  path: \travel-spring\src\main\resources\image\
