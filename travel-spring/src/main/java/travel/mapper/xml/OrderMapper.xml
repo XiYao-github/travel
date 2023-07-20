@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="travel.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="travel.entity.OrderEntity">
+        <result column="id" property="id" />
+        <result column="created_by" property="createdBy" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_by" property="updatedBy" />
+        <result column="updated_time" property="updatedTime" />
+        <result column="del_flag" property="delFlag" />
+        <result column="user_id" property="userId" />
+        <result column="item_id" property="itemId" />
+        <result column="num" property="num" />
+        <result column="price" property="price" />
+        <result column="type" property="type" />
+        <result column="status" property="status" />
+        <result column="status_list" property="statusList" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        created_by,
+        created_time,
+        updated_by,
+        updated_time,
+        del_flag,
+        user_id, item_id, num, price, type, status, status_list
+    </sql>
+
+</mapper>
